@@ -211,8 +211,8 @@ public class Skywars extends JavaPlugin{
 			
 			@Override
 			public void run() {
-				for(Player p : Bukkit.getOnlinePlayers()){
-					for(World world : Bukkit.getWorlds()){
+				for(Player p : Spigot.getOnlinePlayers()){
+					for(World world : Spigot.getWorlds()){
 						for(Player p1 : world.getPlayers()){
 							if(p.getWorld() != p1.getWorld()){
 								p.hidePlayer(p1);
